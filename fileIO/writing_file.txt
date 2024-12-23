@@ -1,0 +1,5 @@
+You can write contents here 
+use 'backslash n' to break the rowNew write() doesn't break rowYou can add a new row using 'file' parameter
+new print() method breaks the row for you!
+new print() method breaks the row for you!
+new print() method breaks the row for you!
