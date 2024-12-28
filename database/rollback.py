@@ -1,5 +1,15 @@
 import sqlite3
 
+con = sqlite3.connect("sample.db")
+cursor = con.cursor()
+create_history_table_query = """
+CREATE TABLE IF NOT EXISTS History (
+    Name TEXT,
+    Age INTEGER
+) 
+"""
+
+cursor.execute(create_history_table_query)
 target_name = input("whose 'age' do you want to update?")
 new_age = input("Tell me new age")
 update_user_query = 'UPDATE User SET Age = ? WHERE Name = ?'
